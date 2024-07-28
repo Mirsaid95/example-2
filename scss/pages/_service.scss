@@ -1,0 +1,160 @@
+.service {
+    width: 100%;
+    padding-top: 40px;
+
+    &__items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__title {
+        font-size: 24px;
+    }
+
+    &__cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__btn {
+        display: none;
+    }
+
+    &__card {
+        width: 100%;
+        // padding: 10px;
+        display: flex;
+        gap: 10px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+
+    }
+
+    &__image {
+        width: 52px;
+
+        img {
+            height: 50px;
+            height: 40px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__info {
+        font-size: 20px;
+    }
+
+    &__info-list {
+        font-size: 16px;
+        color: rgba(88, 86, 86, 1);
+    }
+}
+
+@media (min-width: 768px) {
+    .service{
+        width: 100%;
+        
+    &__items{
+        align-items: center;
+    }
+    &__title{
+        text-align: center;
+        font-size: 28px;
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 45px;
+        border: 1px solid rgba(0, 113, 228, 1);
+        color:  rgba(0, 113, 228, 1);
+        border-radius: 10px;
+    }
+    &__image{
+        width: 10%;
+        img{
+            width: 100%;    
+        }
+    }
+    &__card{
+        align-items: center;
+    }
+    &__text{
+        width: 60%;
+    }
+}
+}
+
+@media (min-width: 1024px) {
+    .service{
+        padding-top: 40px;
+        &__cards{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__title{
+            font-size: 48px;
+        }
+        &__card{
+            width: 100%;
+            height: 480px;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 5px;
+          
+        }
+        &__image{
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__text{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &__info{
+            font-size: 18px;
+            text-align: center;
+        }
+        &__info-list{
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+
+        .fiolet{
+            background: linear-gradient(to bottom, #e685ff 0%, #f2f2f2 100%);
+        }
+        .red{
+            background: linear-gradient(to bottom, #fe94a6 0%, #f2f2f2 100%);
+        }
+        .tifany{
+            background: linear-gradient(to bottom, #7de9ff 0%, #f2f2f2 100%);
+        }
+        .orang{
+            background: linear-gradient(to bottom, #ffe685 0%, #f6f6f6 100%);
+        }
+        .gren{
+            background: linear-gradient(to bottom, #adffc1 0%, #f2f2f2 100%);
+        }
+    }
+}

@@ -1,0 +1,168 @@
+.hero {
+    width: 100%;
+    background-color: rgba(208, 234, 252, 1);
+    padding-top: 10px;
+    position: relative;
+    
+    &__items {
+        width: 100%;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow: hidden;
+    }
+
+    &__price-apple {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        // background-color: orange;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        color: rgba(30, 50, 64, 1);
+        font-size: 37px;
+    }
+
+    &__zero {
+        width: 40px;
+        height: 18px;
+        border: 5px solid;
+        border-radius: 50px;
+    }
+
+    &__apple-img {
+        width: 175px;
+        position: absolute;
+        left: 50%;
+        top: 76%;
+        transform: translate(-50%,-50%);
+        
+        img{
+            width: 175px;
+        }
+    }
+
+    &__price {
+        font-size: 28px;
+        color: rgba(30, 50, 64, 1);
+    }
+
+    &__btn {
+        width: 160px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgba(0, 113, 228, 1);
+        color: white;
+        font-size: 18px;
+    }
+    &__left-right{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+    }
+    .hero-left{
+        position: absolute;
+        left: 20px;
+    }
+    .hero-right{
+        position: absolute;
+        right: 20px;
+    }
+
+
+
+}
+
+@media (min-width: 768px) {
+    .hero{
+        &__items {
+            width: 100%;
+            height: 480px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow: hidden;
+        }
+
+        &__apple-img {
+            width: 270px;
+            position: absolute;
+            left: 50%;
+            top: 74%;
+            transform: translate(-50%,-50%);
+            
+            img{
+                width: 270px;
+            }
+        }
+        .hero-left{
+            position: absolute;
+            left: 20px;
+            top: 50%;
+        }
+        .hero-right{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+        }
+
+        &__price-apple{
+            padding-top: 30px;
+        }
+        &__title{
+            font-size: 59px;
+        }
+        &__price{
+            font-size: 36px;
+        }
+
+        
+    }
+}
+
+@media (min-width: 1240px) {
+    .hero{
+        // width: 100%;
+        margin-top: 20px;
+        &__apple-img{
+            width: 401px;
+            top: 61.3%;
+            left: 30%;
+            img{
+                width: 401px;
+            }
+        }
+
+        &__price-apple{
+            align-items: start;
+            position: absolute;
+            right: 20%;
+            top: 35%;
+        }
+
+        &__title{
+            font-size: 70px;
+            font-weight: 700;
+        }
+        &__price{
+            font-size: 48px;
+        }
+        &__zero{
+            width: 100px;
+            height: 40px;
+            font-weight: 700;
+        }
+        &__btn{
+            width: 160px;
+            height: 60px;
+        }
+
+
+    }
+}
